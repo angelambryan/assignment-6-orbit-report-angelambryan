@@ -10,9 +10,10 @@
         <tr *ngFor = "let Satellite of satellites" class="data-row"> 
         <td>{{Satellite.name}}</td>
         <td [class.warning]="Satellite.isSpaceDebris()">{{Satellite.type}}</td>
-        <td>{{Satellite.launchDate}}</td>
-        <td>{{Satellite.orbitType}}</td>
         <td>{{Satellite.operational}}</td>
+        <td>{{Satellite.orbitType}}</td>
+        <td>{{Satellite.launchDate}}</td>
+              
     </tr>
 </table>
 
